@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="js/index.js"></script>
+    <script src="jquery.js"></script>
+    
+    <script>
+    //    $(document).ready(function(){
+    //     $("#block #b1").click(function(){
+          
+    //     });
+    // });  
+    
+    $(document).ready(function(){
+                 $("#bt1").click(function(){
+                  
+                    $("#graphs").slideToggle(1000);
+                }); 
+                $("#bt2").click(function(){
+                  
+                  $("#block").slideToggle(1000);
+              });
+            });
+    </script>
+
+</head>
+<body>
+    <!-- ======================================================== -->
+   <div id="dash"> 
+    <!-- --------------------------------------------------------------------------- -->
+     <div id="dash1">
+         <!-- ----------------------- -->
+        <div id="dash11">
+           <div id="dd">
+            <div><a href="#"><img src="images/4-removebg-preview.png" alt=""></a></div>
+            <div id="cyb"><a href="#">Cybrom</a></div>
+           </div>
+        </div>
+        <!-- ---------------------- -->
+        <div id="dash12">
+            <div id="d1">
+                <div > <a href=""><i class="fa-solid fa-house"></i> </a></div>
+                <div> <a href="#"> Home</a>  </div>
+            </div>
+           
+          <div id="d2">
+              <div > <a href=""><i class="fa-regular fa-message"></i></a></div>
+              <div> <a href="insert.html"> Add Employee</a>  </div>
+          </div>
+
+          <div id="d3">
+            <div > <a href=""><i class="fa-solid fa-comments"></i></a></div>
+            <div> <a href="display.html"> Display data  </a> </div>
+          </div>
+
+          <div id="d4">
+            <div ><a href=""><i class="fa-solid fa-user"></i></a></div>
+            <div> <a href="update.html"> Update data</a> </div>
+          </div>
+
+          <div id="d5">
+            <div ><a href=""><i class="fa-solid fa-cloud-arrow-up"></i></a></div>
+            <div> <a href=""> Upload </a></div>
+          </div>
+
+          <div id="d6">
+            <div ><a href=""><i class="fa-solid fa-gear"></i></a></div>
+            <div> <a href="">Setting</a>  </div>
+          </div>
+
+          <div id="d7">
+            <div ><a href=""> <i class="fa-solid fa-arrow-right-from-bracket"></i></a></div>
+            <div>  <a href="">Log-Out </a></div>
+          </div>
+
+        </div>
+      
+     </div>
+     <!-- ------------------------------------------------------------------------------------ -->
+     <div id="dash2">
+      <div id="inside">
+
+        <div id="dd1">
+          <a href=""> Primary</i></a>
+          <h1>Dashboard</h1>
+        </div>
+        
+       <!-- <div id="ser"> -->
+        <div id="ser"> 
+             <input type="text" name="sch" id="txt" placeholder="search">
+            <a href=""><i id="mag" class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+         
+    <!-- </div> -->
+       <div id="icon">
+        <a href=""><i id="bell" class="fa-regular fa-bell"></i></a>
+        <a href=""><i id="user" class="fa-solid fa-user"></i></a>
+        <a href="" ><img src="images/icon2.png" alt="" id="imgs"></a>
+        <a href="" id="pro">profile</a> 
+       </div>
+      
+      </div>
+     <!-- =======================Graphs============================================================================== -->
+     <button id="bt1">Graphic Data</button> 
+     <div id="graphs">
+         <div id="g1">
+            <img src="chart/images/chart.webp" alt="">
+         </div>
+
+         <div id="g2">
+           <!-- <img src= alt=""> -->
+         <img src="chart/images/pie1.png" alt="">
+
+        </div>
+
+        <div id="g3">
+         <img src="chart/images/linechart.png" alt="">
+      </div>
+       
+      <div id="g4">
+       <img src="chart/images/bar-chart-1.svg" alt="">
+      </div>
+  </div>
+  <!-- ----------------------------------------------- -->
+  <!-- ----------------blocks------------------------- -->
+  <button  id="bt2">Details</button>
+          <div id="block">
+                <div id="b1">
+                  <a href=""> 
+                    <div id="bb1">
+                  <p>Visits Today</p>
+                  <h1>18089</h1>
+                    </div>
+                </a>
+                <a href="#" id="c1"><i class="fa-solid fa-person"></i></a>
+              
+                </div>
+
+                 
+
+               <div id="b2">
+                <a href="">
+                  <div id="bb2">
+                <p>New User</p>
+                <h1>350</h1>
+                  </div>
+              </a>
+              <a href="#" id="c2"><i class="fa-solid fa-users"></i></a>
+              </div>
+             
+             
+
+           <div id="b3">
+            <a href="">
+              <div id="bb3">
+            <p>New orders</p>
+            <h1>7500</h1>
+              </div>
+          </a>
+          <a href="#" id="c3"><i class="fa-solid fa-bag-shopping"></i></a>
+         
+          </div>
+        
+
+         <div id="b4">
+            <a href="">
+              <div id="bb4">
+               <p>Total sales</p>
+               <h1>$45000</h1>
+              </div>
+              </a>
+              <a href="#" id="c4"><i class="fa-solid fa-calculator"></i></a>
+           </div>
+
+           <div id="b5">
+            <a href="">
+              <div id="bb5">
+               <p>Notification</p>
+               <h1>720</h1>
+              </div>
+              </a>
+              <a href="#" id="c5"><i class="fa-solid fa-bell"></i></a>
+           </div>
+           
+           <div id="b6">
+            <a href="">
+              <div id="bb6">
+               <p> Request</p>
+               <h1>190</h1>
+              </div>
+              </a>
+              <a href="#" id="c6"><i class="fa-solid fa-comment"></i></a>
+           </div>
+
+           
+         </div>    
+
+        
+            
+
+
+          </div>
+
+     </div>
+   
+     
+    <!-- --------------------------------------------------------------------------------------- -->
+   <!-- </div> -->
+  <script src="jquery.js"></script>
+</body>
+</html>

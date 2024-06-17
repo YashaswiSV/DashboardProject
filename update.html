@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0px;
+          background-color: #f4f4f9;
+        }
+  
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+  
+        table th,
+        table td {
+          padding: 15px;
+          text-align: left;
+        }
+  
+        table th {
+          /* background-color: #009879; */
+          /* background-color: black; */
+          background: rgb(243, 184, 76);
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+        }
+  
+        table tr {
+          border-bottom: 1px solid #dddddd;
+        }
+  
+        table tr:nth-of-type(even) {
+          background-color: #f3f3f3;
+        }
+  
+        table tr:last-of-type {
+          border-bottom: 2px solid  rgb(243, 184, 76);
+        }
+  
+        table tr:hover {
+          background-color: #f1f1f1;
+        }
+  
+        input[type="text"] {
+          width: 90%;
+          padding: 8px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          transition: all 0.3s ease;
+        }
+  
+        input[type="text"]:focus {
+          border-color: #009879;
+          outline: none;
+        }
+  
+        .button {
+        
+          border: none;
+          padding: 10px 15px;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          /* display: grid;
+          grid-template-columns: auto auto; */
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 4px;
+        }
+  
+        .button-edit {
+          background-color: #4caf50; /* Green */
+        }
+  
+        .button-save {
+          background-color: #008cba; /* Blue */
+          display: none;
+        }
+  
+        .button-delete {
+          background-color: #f44336; /* Red */
+        }
+        #ser #txt{
+            height: 35px;
+            width: 250px;
+        }
+      </style>
+
+
+
+
+
+</head>
+<body>
+    <!-- ======================================================== -->
+   <div id="dash"> 
+    <!-- --------------------------------------------------------------------------- -->
+     <div id="dash1">
+         <!-- ----------------------- -->
+        <div id="dash11">
+           <div id="dd">
+            <div><a href="#"><img src="images/4-removebg-preview.png" alt=""></a></div>
+            <div id="cyb"><a href="#">Cybrom</a></div>
+           </div>
+        </div>
+        <!-- ---------------------- -->
+        <div id="dash12">
+            <div id="d1">
+                <div > <a href=""><i class="fa-solid fa-house"></i> </a></div>
+                <div> <a href="index.html"> Home</a>  </div>
+            </div>
+           
+          <div id="d2">
+              <div > <a href=""><i class="fa-regular fa-message"></i></a></div>
+              <div> <a href="insert.html"> Add Employee</a>  </div>
+          </div>
+
+          <div id="d3">
+            <div > <a href=""><i class="fa-solid fa-comments"></i></a></div>
+            <div> <a href="display.html"> Display data  </a> </div>
+          </div>
+
+          <div id="d4">
+            <div ><a href=""><i class="fa-solid fa-user"></i></a></div>
+            <div> <a href="update.html"> Update data</a> </div>
+          </div>
+
+          <div id="d5">
+            <div ><a href=""><i class="fa-solid fa-cloud-arrow-up"></i></a></div>
+            <div> <a href=""> Upload </a></div>
+          </div>
+
+          <div id="d6">
+            <div ><a href=""><i class="fa-solid fa-gear"></i></a></div>
+            <div> <a href="">Setting</a>  </div>
+          </div>
+
+          <div id="d7">
+            <div ><a href=""> <i class="fa-solid fa-arrow-right-from-bracket"></i></a></div>
+            <div>  <a href="">Log-Out </a></div>
+          </div>
+
+        </div>
+      
+     </div>
+     <!-- ------------------------------------------------------------------------------------ -->
+     <div id="dash2">
+      <div id="inside">
+
+        <div id="dd1">
+          <a href=""> Primary</i></a>
+          <h1>Dashboard</h1>
+        </div>
+        
+       <!-- <div id="ser"> -->
+        <div id="ser"> 
+             <input type="text" name="sch" id="txt" placeholder="search" >
+            <a href="" ><i id="mag"  class="fa-solid fa-magnifying-glass" ></i></a>
+        </div>
+         
+    <!-- </div> -->
+       <div id="icon">
+        <a href=""><i id="bell" class="fa-regular fa-bell"></i></a>
+        <a href=""><i id="user" class="fa-solid fa-user"></i></a>
+        <a href="" ><img src="images/icon2.png" alt="" id="imgs"></a>
+        <a href="" id="pro">profile</a> 
+       </div>
+      
+     
+
+      </div>
+     
+      <div id="demo"></div>
+     </div>
+    <!-- --------------------------------------------------------------------------------------- -->
+   
+   </div>
+  <script src="js/update.js"></script>
+</body>
+</html>
